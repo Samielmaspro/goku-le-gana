@@ -1,0 +1,9 @@
+body{
+    background-color: azure;
+    color: black;
+}
+#camara{
+    border:2px dashed rgb(255, 0, 0);
+    width:350px;
+    height: 300px;
+}

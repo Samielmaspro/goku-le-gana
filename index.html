@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="//unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>reconocimiento kiwie</title>
+</head>
+<body>
+  <div class="container">
+    <center>
+  <h3 class="btn btn-primary heading">Introduccion a teachable machine</h3>
+  <hr>
+  <label>El modelo esta entrenado para identificar los siguientes objetos</label>
+  <br>
+  <b class="name_of_objects">
+    <hr>
+    kiwi
+    <hr>
+    tijeras
+    <hr>
+    mouse
+    <hr>
+    encendedor
+    <hr>
+    samiii
+    <hr>
+  </b>
+  <label>vista de la camara:</label>
+  <div id="camara"></div>
+  <br>
+  <div id="resultado"></div>
+  <br>
+  <button class="btn btn-info" onclick="tomar_foto()">tomar imagen</button>
+  <br><br>
+  <button class="btn btn-info" onclick="identificar_foto()">identificar imagen</button>
+  <br><br>
+  <p>objeto: <span id="nombre_objeto"></span></p>
+  <br>
+  <p>precision: <span id="nombre_precision"></span></p>
+</center>
+</div>  
+    <script src="main.js"></script>
+</body>
+</html>
